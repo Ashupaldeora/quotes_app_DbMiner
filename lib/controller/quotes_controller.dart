@@ -5,9 +5,48 @@ import 'package:quotes_with_sql/model/quotes_model.dart';
 import 'dart:math';
 class QuotesController extends GetxController
 {
+RxList<QuotesModel> mainQuotes = <QuotesModel>[].obs;
 RxList<QuotesModel> quotes = <QuotesModel>[].obs;
 LiquidController liquidController = LiquidController();
 RxList<String> preselectedImages = <String>[].obs;
+
+List category = [
+  {
+    "category" : "Life",
+    "image": 'assets/images/life1.jpg',
+  },{
+    "category" : "Love",
+    "image": 'assets/images/love1.jpg',
+  },{
+    "category" : "Success",
+    "image":  'assets/images/success1.jpg',
+  },{
+
+    "category" : "Motivation",
+    "image":  'assets/images/motivation1.jpg',
+  },{
+    "category" : "Happiness",
+    "image": 'assets/images/life5.jpg',
+  },{
+    "category" : "Powerful",
+    "image":      'assets/images/powerful2.jpg',
+
+  },{
+    "category" : "Friendship",
+    "image":   'assets/images/friendship1.jpg',
+  },{
+    "category" : "Humor",
+    "image":   'assets/images/funny2.jpg',
+  },
+
+
+
+
+
+
+
+
+];
 
 Map categoryImages = {
   'Life': [
@@ -15,6 +54,10 @@ Map categoryImages = {
     'assets/images/life2.jpg',
     'assets/images/life3.jpg',
     'assets/images/life4.jpg',
+
+
+
+
 
   ],
   'Love':[
@@ -69,7 +112,9 @@ loadData();
 Future<void> loadData()
 async {
 List json = await ApiServices.apiServices.fetchData();
-quotes.value = json.map((e) => QuotesModel.fromJson(e)).toList();
+mainQuotes.value = json.map((e) => QuotesModel.fromJson(e)).toList();
+mainQuotes.shuffle();
+quotes.value = mainQuotes;
 preloadRandomImages();
 }
 

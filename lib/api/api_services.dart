@@ -16,6 +16,7 @@ class ApiServices
     Response response = await http.get(Uri.parse(baseUrl));
     if(response.statusCode == 200)
       {
+        print("API CALLED");
        List json = jsonDecode(response.body);
        return json;
       }else{
