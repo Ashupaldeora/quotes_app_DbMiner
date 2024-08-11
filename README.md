@@ -1,16 +1,17 @@
-# quotes_with_sql
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/1e0575ee-31ad-43ef-918e-79b338aeedce" height="500px" hspace=20></img>
+  
+  <img src="https://github.com/user-attachments/assets/7674d5a6-60ff-4c34-a945-19a9b1a2bdcf" height="500px" hspace=20></img>
+ 
+</div>
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/10cc7bc3-b9a6-406a-8305-edbb38be1aa1" height="500px" hspace=20></img>
+  <img src="https://github.com/user-attachments/assets/64f6bb7e-7037-4a9a-8aaf-a86baa939502" height="500px" hspace=20></img>
 
-A new Flutter project.
+</div>
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/abb0dae5-7b43-4049-bb9b-d658c12f328e" height="500px" hspace=20></img>
+  <img src="https://github.com/user-attachments/assets/ccf470e6-0955-457a-9b01-65b610f54208" height="500px" hspace=20></img>
 
-## Getting Started
+</div>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
