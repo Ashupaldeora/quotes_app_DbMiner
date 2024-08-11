@@ -59,11 +59,26 @@ Future categorySheet(BuildContext context,QuotesController controller)
              crossAxisSpacing: 10
            ), itemBuilder: (context, index) =>  GestureDetector(
              onTap: () {
-controller.quotes.value = controller.mainQuotes
-    .where((quote) => quote.category == controller.category[index]['category'])
-    .toList();
+if(controller.category[index]['category']=="General")
+  {
+    controller.quotes.value = controller.mainQuotes;
+    controller.quotes.refresh();
+    controller.preloadRandomImages();
+    controller.liquidController.jumpToPage(page: 0);
+    Get.back();
+  }else
+    {
+      controller.quotes.value = controller.mainQuotes
+          .where((quote) => quote.category == controller.category[index]['category'])
+          .toList();
+      controller.quotes.refresh();
+      controller.liquidController.jumpToPage(page: 0);
 
-Get.back();
+
+      Get.back();
+    }
+
+
              },
              child: Container(
                height: 100,

@@ -41,6 +41,7 @@ dependencies:
   liquid_swipe: ^3.1.0
   google_fonts: ^6.2.1
   path: ^1.9.0
+  flutter_easyloading: ^3.0.5
 
 dev_dependencies:
   flutter_test:

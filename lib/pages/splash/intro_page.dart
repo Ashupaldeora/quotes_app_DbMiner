@@ -107,7 +107,7 @@ class _SplashPageState extends State<IntroPage> with TickerProviderStateMixin {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Get.offAll(const HomePage());
+                          Get.offAll( HomePage());
 
                         },
                         child: Container(
